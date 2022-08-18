@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Frontend VAGAS.com</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <header>
+        <h1>
+          Formulário<br />para compra de<br /><strong
+            >Pacote de <span lang="en">Stickers</span></strong
+          >
+        </h1>
+      </header>
+
+      <main>
+        <article>
+          <fieldset>
+            <h2>Quais <span lang="en">stickers</span>?</h2>
+            <label for="react" lang="en">
+              <input type="checkbox" name="react" id="react" value="react" />
+              React
+            </label>
+            <label for="vue" lang="en">
+              <input type="checkbox" name="vue" id="vue" value="vue" />
+              Vue
+            </label>
+            <label for="angular" lang="en">
+              <input
+                type="checkbox"
+                name="angular"
+                id="angular"
+                value="angular"
+              />
+              Angular
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="qntd">
+              <h2>Quantos <span lang="en">stickers</span> de cada?</h2>
+            </label>
+            <div class="counter">
+              <button id="btnMenos" type="button" title="decrementar" disabled>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42px"
+                  height="42px"
+                >
+                  <path
+                    d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z"
+                  />
+                </svg>
+              </button>
+              <input type="number" name="qntd" id="qntd" value="0" min="0" step="1" />
+              <button id="btnMais" type="button" title="incrementar">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42px"
+                  height="42px"
+                >
+                  <path
+                    d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <label for="descricao"><h2>Observações:</h2></label>
+            <textarea
+              id="descricao"
+              name="descricao"
+              placeholder="Alguma dúvida? Recado?"
+            ></textarea>
+          </fieldset>
+        </article>
+      </main>
+
+      <footer>
+        <p id="mensagem"></p>
+        <button id="enviar" type="button">Enviar</button>
+      </footer>
+    </div>
+
+    <script src="./script/main.js"></script>
+  </body>
+</html>
